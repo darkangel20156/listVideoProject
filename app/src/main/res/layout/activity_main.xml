@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/statusConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's start checking..."
+        android:textSize="24sp"
+        android:textColor="#34FC34"
+        android:textAlignment="textEnd"/>
+
+
+
+    <ListView
+        android:id="@+id/listVideo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/statusConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/list_item"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
